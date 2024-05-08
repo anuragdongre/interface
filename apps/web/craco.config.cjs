@@ -140,8 +140,9 @@ module.exports = {
         }),
         // Webpack 5 does not resolve node modules, so we do so for those necessary:
         fallback: {
-          // - react-markdown requires path
-          path: require.resolve('path-browserify'),
+          "fs": false,
+          "os": false,
+          "path": false
         },
       })
 
