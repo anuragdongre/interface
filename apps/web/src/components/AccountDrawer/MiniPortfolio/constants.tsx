@@ -153,7 +153,7 @@ export const CancelledTransactionTitleTable: { [key in TransactionType]: string 
   [TransactionType.ADD_LIQUIDITY_V3_POOL]: t`Add liquidity cancelled`,
   [TransactionType.REMOVE_LIQUIDITY_V3]: t`Remove liquidity cancelled`,
   [TransactionType.CREATE_V3_POOL]: t`Create pool cancelled`,
-  [TransactionType.COLLECT_FEES]: t`Collect fees cancelled`,
+  [TransactionType.COLLECT_FEES]: t`Collect fees cancelled`, 
   [TransactionType.APPROVAL]: t`Approval cancelled`,
   [TransactionType.CLAIM]: t`Claim cancelled`,
   [TransactionType.BUY]: t`Buy cancelled`,
