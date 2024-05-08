@@ -92,6 +92,13 @@ module.exports = {
       }),
     ],
     configure: (webpackConfig) => {
+
+      
+      webpackConfig.output = {
+        path: path.resolve(__dirname, 'dist'), // Set the output directory to 'dist'
+        filename: 'static/js/[name].[contenthash:8].js',
+        publicPath: '/',
+      };
       // Configure webpack plugins:
       webpackConfig.plugins = webpackConfig.plugins
         .map((plugin) => {
